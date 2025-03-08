@@ -1,0 +1,5 @@
+<label for="birthdate">Date of Birth:</label>
+<input type="date" id="birthdate" name="birthdate"
+       min="<?php echo date('Y-m-d', strtotime('-18 years')); ?>"
+       max="<?php echo date('Y-m-d', strtotime('-100 years')); ?>"
+       required>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART PANCHAYATH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="s13.css">
+<body>
+    <header class="hd">
+        <div class="mm">
+            <h1 >SMART GRAMA PANCHAYATH</h1>
+        </div>
+    <div>
+        <nav class="list">
+            <ol>
+                <li><a href="main.html"><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href="about.html"><i class="fa fa-address-card"></i> ABOUT</a></li>
+                <li><a href="service.html"><i class="fa fa-circle-info"></i> SERVICE</a></li>
+                <li><a href="feedback.html"><i class="fa fa-comment-dots"></i> FEEDBACK</a></li>
+                <li><a href="Admin.html"> <i class="fa fa-user"></i> ADMIN</a></li>
+
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <div class="mid">
+        <div class="mbox">
+            <div class="title"><i class="fa fa-pen-to-square"></i>EMPLOYEE REGISTRATION</div>
+            <div class="content">
+            <form method="post" action="emp_registration.php">
+                <div class="user-details">
+                    <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required name="fname">
+                    </div>
+                <div class="input-box">
+                    <span class="details">EMAIL</span>
+                    <input type="email" placeholder="Enter your email" required name="email">
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Enter your phone number" required name="cnum" min="1111111111" max="9999999999">
+                </div>
+                <div class="input-box">
+                    <span class="details">Qualification</span>
+                    <input type="text" placeholder="Enter your Qualification" required name="qli">
+                </div>
+                <div class="input-box">
+                    <span class="details">ADDRESS</span>
+                    <textarea rows="5" cols="50" placeholder="Enter your ADDRESS" required name="address"></textarea>
+                </div>
+                <div class="DOB">
+                    <span class="DOB-details">DATE OF BIRTH</span>
+                    <input type="number" name="day" size="2" maxlength="2" placeholder="Day" min="1" max="31" class="day" required>
+                <select name="month" class="month" required>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <input type="number" name="year" minlength="4" maxlength="4" placeholder="Year" min="1991" max="2005" class="year" required>
+          </div>
+
+          <!-- <div class="PASSWORD">
+            <span class="PASSWORD-details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="CPASSWORD">
+            <span class="CPASSWORD-details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+        </div> -->
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" required value="m">
+          <input type="radio" name="gender" id="dot-2" required value="f">
+          <input type="radio" name="gender" id="dot-3" required value="o">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Others</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Apply">
+        </div>
+      </form>
+      <form method="post" action="emp.html">
+        <div class="button2">
+            <input type="submit" value="CANCEL">
+          </div>
+      </form>
+    </div>
+  </div>
+  
+
+    </body>
+    </html>
